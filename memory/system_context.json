@@ -1,0 +1,9 @@
+{
+  "status": "READY",
+  "active_tasks": [],
+  "failed_tasks": [],
+  "recent_actions": [
+    "bootstrap_full"
+  ],
+  "system_health": "OK"
+}
