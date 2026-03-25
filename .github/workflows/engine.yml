@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'events/**'
+  repository_dispatch:
+    types: [run_analysis]
 
 jobs:
   process:
@@ -17,4 +19,4 @@ jobs:
         run: echo "Processing events..."
 
       - name: Done
-        run: echo "GOT OS RUNNING"
+        run: echo "GPT OS RUNNING"
