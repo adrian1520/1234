@@ -1,0 +1,21 @@
+name: GPT-OS Queue
+
+permissions:
+  contents: write
+
+on:
+  push:
+    paths:
+      - 'memory/queue/**'
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Process queue
+        run: |
+          echo "Processing queue ..."
+      - name: Done
+        run: echo "QUEUE DONE"
