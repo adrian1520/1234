@@ -1,5 +1,8 @@
 name: GPT-OS Engine
 
+permissions:
+  contents: write
+
 on:
   push:
     paths:
@@ -12,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@3
+      - uses: actions/checkout@v3
       - name: Run analysis
         run: |
           mkdir -p memory/results
